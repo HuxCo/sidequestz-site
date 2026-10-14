@@ -12,6 +12,7 @@
   --blue: #285cc8;
   --violet: #6749bf;
   --pink: #d4427b;
+  --on-spot: #16141a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +28,7 @@
     --blue: #5070db;
     --violet: #866bdb;
     --pink: #d35089;
+    --on-spot: #16141a;
   }
 }
 
@@ -57,14 +59,14 @@ header.masthead .wrap { display: block; }
   line-height: 0.88;
   letter-spacing: -0.025em;
   text-transform: uppercase;
-  color: var(--paper);
+  color: var(--on-spot);
 }
 .strap {
   margin: 10px 0 0;
   font-size: 15px;
   font-weight: 600;
-  color: var(--paper);
-  opacity: 0.92;
+  color: var(--on-spot);
+  opacity: 0.85;
 }
 
 nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
@@ -101,7 +103,7 @@ a { color: inherit; text-underline-offset: 3px; }
   border-radius: 7px;
   box-shadow: 5px 5px 0 var(--ink);
 }
-.panel.loud { background: var(--yellow); }
+.panel.loud { background: var(--yellow); color: var(--on-spot); }
 .panel.quiet { background: var(--deep); box-shadow: 3px 3px 0 var(--ink); }
 .panel > :last-child { margin-bottom: 0; }
 .panel h2, .panel h3 { margin-top: 0; }
@@ -111,6 +113,7 @@ a { color: inherit; text-underline-offset: 3px; }
   margin: 2px 0 16px;
   padding: 11px 14px;
   background: var(--paper);
+  color: var(--ink);
   border: 2px solid var(--ink);
   border-radius: 6px;
   font-size: clamp(15px, 4.4vw, 19px);
@@ -121,11 +124,11 @@ a { color: inherit; text-underline-offset: 3px; }
   display: inline-block;
   padding: 13px 22px;
   background: var(--teal);
-  color: var(--paper);
+  color: var(--on-spot);
   border: 2.5px solid var(--ink);
   border-radius: 6px;
   box-shadow: 4px 4px 0 var(--ink);
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 900;
   letter-spacing: 0.04em;
   text-transform: uppercase;
